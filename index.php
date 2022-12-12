@@ -8,4 +8,7 @@
     include __DIR__ . '/Models/Category.php';
     include __DIR__ . '/Models/Product.php';
 
-    ?>
+    $categories = [
+        new Category("Ratto"),
+        new Category("Porcellino D'India")
+    ];

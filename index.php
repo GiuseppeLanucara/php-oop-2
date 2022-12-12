@@ -12,3 +12,11 @@
         new Category("Cani"),
         new Category("Gatti")
     ];
+
+    $generals = [
+        $croccantini = new Product(),
+        var_dump($croccantini),
+
+        $cuccia = new Product(),
+        var_dump($cuccia),
+    ];

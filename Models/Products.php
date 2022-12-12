@@ -13,7 +13,7 @@ class Product
     {
         $this->image = $image;
         $this->title = $title;
-        $this->marca = $brand;
+        $this->brand = $brand;
         $this->type = $type;
         $this->price = $price;
         $this->categories = $categories;

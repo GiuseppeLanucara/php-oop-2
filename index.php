@@ -15,10 +15,8 @@
 
     $generals = [
         $croccantini = new Product("/img/foodan.jpg", "Croccantini", "HappyDog", "Cibo per Cani", 15, new Category('Cani')),
-        var_dump($croccantini),
 
         $cuccia = new Product("/img/cat.jpg", "Culla", "HappyCat", "Culla per Gatti", 50, new Category('Gatti')),
-        var_dump($cuccia),
     ];
 
     ?>
@@ -38,14 +36,14 @@
  <body>
      <div class="container">
          <div class="row row-cols-3 g-3 text-center">
-             <?php foreach ($products as $product) { ?>
+             <?php foreach ($generals as $product) { ?>
                  <div class="col">
                      <div class="card">
                          <div class="card-body">
                              <img src="<?php echo $product->image ?>" alt="">
                              <h2 class="card-title"><?php echo $product->title ?></h2>
                              <p class="card-text">Price: <?php echo $product->price ?></p>
-                             <p class="card-text">Category: <?php echo $prod->categories->type ?></p>
+                             <p class="card-text">Category: <?php echo $product->categories->animal ?></p>
                          </div>
                      </div>
                  </div>

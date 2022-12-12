@@ -6,7 +6,7 @@
  <?php
 
     include __DIR__ . '/Models/Category.php';
-    include __DIR__ . '/Models/Product.php';
+    include __DIR__ . '/Models/Products.php';
 
     $categories = [
         new Category("Cani"),
@@ -14,9 +14,11 @@
     ];
 
     $generals = [
-        $croccantini = new Product("/img/foodan.jpg", "Croccantini", "HappyDog", "Cibo per Cani", 15, new Category('Cani')),
+        $croccantini = new Product("img/foodan.jpg", "Croccantini", "HappyDog", "Cibo per Cani", 15, new Category('Cani')),
 
-        $cuccia = new Product("/img/cat.jpg", "Culla", "HappyCat", "Culla per Gatti", 50, new Category('Gatti')),
+        $cuccia = new Product("img/cat.jpg", "Culla", "HappyCat", "Culla per Gatti", 50, new Category('Gatti')),
+
+        $giocattolo = new Product("img/play.jpg", "Giocattolo", "HappyCat", "Robot Giocattolo per Gatti", 240, new Category('Gatti'))
     ];
 
     ?>
@@ -34,7 +36,7 @@
  </head>
 
  <body>
-     <div class="container">
+     <div class="container mt-5">
          <div class="row row-cols-3 g-3 text-center">
              <?php foreach ($generals as $product) { ?>
                  <div class="col">
